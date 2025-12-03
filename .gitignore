@@ -1,0 +1,101 @@
+# Generic .gitignore for mixed projects (Python, Docker, editors, OS)
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+wheels/
+.eggs/
+
+# Virtual environments
+.env
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging / distribution
+*.egg-info/
+*.egg
+*.whl
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+nosetests.xml
+
+# Type checkers / caches
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Tooling
+.tox/
+.nox/
+.cache/
+.cache/*
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite3
+*.db
+
+# Secrets / environment files
+.env.local
+.env.*.local
+.envrc
+secrets.*
+credentials.json
+
+# Docker
+docker-compose.override.yml
+.docker/
+**/docker-compose.override.yml
+
+# IDEs / editors
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Node (if present)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Backup / temp files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+~$*
+
+# Misc
+coverage/
+htmlcov/
+report.xml
+*.orig
+
+# Ignore Dropbox/Sync temporary files
+.dropbox/
+*.dropbox
+
+# End of file
