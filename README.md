@@ -5,11 +5,14 @@ A simple shell script to back up Docker containers, images, and volumes.
 ## Usage
 
 ```bash
-./dockerbackup.sh /path/to/backup/directory [--include_images]
+./dockerbackup.sh /path/to/backup/directory [--include_images] [--exclude_containers <c1,c2>] [--exclude_images <i1,i2>] [--exclude_volumes <v1,v2>]
 ```
 
 - `/path/to/backup/directory`: The directory where the backup files will be stored. This is a required argument.
 - `[--include_images]`: An optional argument to include Docker images in the backup.
+- `[--exclude_containers <c1,c2>]`: An optional argument to exclude a comma-separated list of containers from the backup.
+- `[--exclude_images <i1,i2>]`: An optional argument to exclude a comma-separated list of images from the backup.
+- `[--exclude_volumes <v1,v2>]`: An optional argument to exclude a comma-separated list of volumes from the backup.
 
 ## What it backs up
 
