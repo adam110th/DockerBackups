@@ -24,3 +24,8 @@ A simple shell script to back up Docker containers, images, and volumes.
 
 - Docker must be installed and running on the system where you run the script.
 - The script uses the `busybox` image to back up volumes. If you don't have it, Docker will pull it automatically.
+
+## Additional notes
+
+- Ensure your save path is included in a cloud backup to ensure offsite backup of the files.
+- Use crontab for automated backups. It will currently overwrite the last backup file, so it only retains the most recent backup. I have an incremental cloud backup system in place that handles changes over time for me.
